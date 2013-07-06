@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.twitter
+{
+	background-image:url(../img/fondo.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+.masthead {
+  margin-bottom: 0;
+  color: #fff;
+}
+.masthead-links {
+  margin: 0;
+  list-style: none;
+}
+.masthead-links li {
+	font-size:10px;
+  display: inline;
+  padding: 0 5px;
+  color: rgba(255,255,255,.25);
+  
+}
+.foot
+{
+	top:90%;
+  position:absolute;
+}
+.bienvenido
+{
+width: 838px;
+top: 20%;
+position:absolute;
+}
+.bien
+{
+	color:#FFF;
+}
+p.bien
+{
+	font-size:20px;
+}
+.inicio
+{
+	font-size:10px;
+	color:#999;
+}
+.vinculo
+{
+	color:#FFF;
+}
+.registro
+{
+	color:#000;
+	font-size:16px;
+}

@@ -1,0 +1,18 @@
+.fondo{
+  background: url(../images/login/Blue.jpg) center 0 no-repeat;
+  background-size: 1600px 1200px;
+  position:absolute;
+  left:100px; 
+  top:50px;
+}
+.fondoinicio1{
+  background: url(../images/login/hp.jpg) center 0 no-repeat;
+  background-size: 1600px 1450px;
+}
+center h1 {
+  color: white;
+}
+.color{
+  color: white;
+}
+

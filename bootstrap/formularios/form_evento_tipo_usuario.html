@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registro Evento_Tipo_Usuario</title>
+	<link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/mihoja.css" />
+</head>
+
+<body class="formul">
+<div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">SITEC 2013</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="form_usuarios.html" class="menu">Registro Usuarios</a></li>
+                <li><a href="form_eventos.html" class="menu">Registro Eventos</a></li>
+                <li><a href="form_actividades.html" class="menu">Registro Actividades</a></li>
+                <li><a href="form_tipo_usuario.html" class="menu">Registro TU</a></li>
+                <li class="active"><a href="form_evento_tipo_usuario.html" class="menu">Registro ETU</a></li>
+                <li><a href="form_asistente_tipo_usuario.html" class="menu">Registro ATU</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+        <div class="container-fluid tabla registro">
+        	<div class="row-fluid">
+            	<div class="span12">
+                    <select name="eventos">
+                        <option>Selecciona un evento</option>
+                    </select>
+                    <button class="btn btn-info">BUSCAR</button>
+            	</div>
+            </div>
+            <div class="row-fluid">
+            	<div class="span5">
+                	<div class="row-fluid">
+                    	<label class="reg">Tipos de usuario vinculados con el evento</label>
+                    </div>
+                    <div class="row-fluid show-grid">
+                    	<a href="#">UsuarioX</a>
+                    </div>
+                </div>
+                <div class="span2">
+                	<button class="btn btn-success">Agregar</button>
+                    <br />
+                    <button class="btn btn-danger">Eliminar</button>
+                </div>
+                <div class="span5">
+                	<div class="row-fluid">
+                    	<label class="reg">Tipos de suario existentes</label>
+                    </div>
+                    <div class="row-fluid show-grid">
+                    	<a href="#">UsuarioY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
