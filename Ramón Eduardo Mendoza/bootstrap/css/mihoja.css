@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.menu
+{
+	font-size:14px;
+}
+.formul
+{
+	background-image:url(../img/fondo1.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+.show-grid {
+  margin-bottom: 0;
+  margin-top: 5px;
+   background-color: #ccc;
+}
+
+
+.registro
+{
+	top:10%;
+	position:absolute;
+}
+.reg
+{
+	color:#FFF;
+	font-style:inherit;
+}
+.tabla
+{
+	width:800px;
+	height:300px;
+}
