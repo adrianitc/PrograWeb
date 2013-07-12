@@ -1,5 +1,5 @@
 <?php
-include '../Conexion/conexion.php';
+include '../conexion.php';
 class Classusuariodetalle{
 
     private $id_usuario,$apellido_paterno,$apellido_materno,$nombre,$sexo,$edad,$email,$nctr_rfc; 
@@ -7,7 +7,7 @@ class Classusuariodetalle{
     function __construct() {
      
     }
-    function __establecer($id_usuario,$apellido_paterno,$apellido_materno,$nombre,$sexo,$edad,$email,$nctr_rfc) {
+    function establecer($id_usuario,$apellido_paterno,$apellido_materno,$nombre,$sexo,$edad,$email,$nctr_rfc) {
         $this->set_id_usuario($id_usuario);
         $this->set_apellido_paterno($apellido_paterno);
         $this->set_apellido_materno($apellido_materno);
@@ -71,7 +71,7 @@ function get_nctr_rfc() {
 
         $con = new conexion();
         $db = $con->conectar();
-        $id_usu=  $this->get_id_usuario();
+        //$id_usu=  $this->get_id_usuario();
         $ape_pat=  $this->get_apellido_paterno();
         $ape_mat=  $this->get_apellido_materno();
         $nom=  $this->get_nombre();
@@ -80,11 +80,11 @@ function get_nctr_rfc() {
         $email=  $this->get_email();
         $nctr_rfc=  $this->get_nctr_rfc();
          
-        $sql = "insert into usuario_detalle(id_usuario,apellido_paterno,apellido_materno,nombre,sexo,edad,email,nctr_rfc) values ('$id_usu,$ape_pat,$ape_mat,$nom,$sex,$edad,$email,$nctr_rfc);";
+        $sql = "insert into usuario_detalle(apellido_paterno,apellido_materno,nombre,sexo,edad,email,nctr_rfc) values ($ape_pat,$ape_mat,$nom,$sex,$edad,$email,$nctr_rfc);";
         $rs1 = $db->Execute($sql);
-        //return $rs;
-       echo "cve:" . $this->get_id_usuario();
-       return true;
+        return $rs1;
+       //echo "cve:" . $this->get_id_usuario();
+       //return true;
     }
     
     public function consultar() {

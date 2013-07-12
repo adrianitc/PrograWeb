@@ -1,6 +1,6 @@
 <?php
 
-include "../Models/classusuariodetalle.php";
+include "../Models/usuario_detalle.php";
     $cveusu= $_POST['id_usuario'];
     $apellidop= $_POST['apellido_paterno'];
     $apellidom= $_POST['apellido_materno'];
@@ -12,8 +12,8 @@ include "../Models/classusuariodetalle.php";
     
    
      
-    $Deusuario = new classusuariodetalle();
-    $Deusuario->establcer($cveusu,$apellidop,$apellidom,$nomb,$sexo,$edad,$email,$nctr);
+    $Deusuario = new Classusuariodetalle();
+    $Deusuario->establecer($cveusu,$apellidop,$apellidom,$nomb,$sexo,$edad,$email,$nctr);
     
     $val=$Deusuario->insertar();
 if($val==true)

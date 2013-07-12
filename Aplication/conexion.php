@@ -1,6 +1,6 @@
 <?php
 
-include ('adodb5/adodb.inc.php');
+include ('libs/adodb5/adodb.inc.php');
 class conexion {
     private $db='mysql',$servidor='localhost', $user='root', $password='', $based='itc';
 
