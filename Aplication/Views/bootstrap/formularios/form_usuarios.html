@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Registro Usuarios</title>
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/mihoja.css" />
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <link href="../css/mihoja.css" rel="stylesheet" />
 </head>
 
 <body class="formul">
@@ -35,27 +35,31 @@
         <div class="container registro">
             <h1 class="reg">Registro de Usuarios</h1>
             <table width="514" height="152" border="0">
-                <form action="" method="post" name="usuarios">
+                <form action="../../../Controllers/ins_usuario.php" method="POST" name="usuarios">
                 <tr>
-                    <td><label for="ap_pa" class="reg">Apellido Paterno:</label></td>
-                    <td><input type="text" name="ap_pa" id="ap_pa" size="20" placeholder="Apellido Paterno" required="required"/></td>
+                    <td><label for="id_usuario" class="reg">Id Usuario:</label></td>
+                    <td><input type="text" name="id_usuario" id="ap_pa" size="20" placeholder="Id Usuario" required="required"/></td>
                 </tr>
                 <tr>
-                    <td><label for="ap_ma" class="reg">Apellido Materno:</label></td>
-                    <td><input type="text" name="ap_ma" id="ap_ma" size="20" placeholder="Apellido Materno" required="required"/></td>
+                    <td><label for="apellido_paterno" class="reg">Apellido Paterno:</label></td>
+                    <td><input type="text" name="apellido_paterno" id="ap_pa" size="20" placeholder="Apellido Paterno" required="required"/></td>
                 </tr>
                 <tr>
-                    <td><label for="nomb" class="reg">Nombre(s):</label></td>
-                    <td><input type="text" name="nomb" id="nomb" size="20" placeholder="Nombre(s)" required="required"/></td>
+                    <td><label for="apellido_materno" class="reg">Apellido Materno:</label></td>
+                    <td><input type="text" name="apellido_materno" id="ap_ma" size="20" placeholder="Apellido Materno" required="required"/></td>
+                </tr>
+                <tr>
+                    <td><label for="nombre" class="reg">Nombre(s):</label></td>
+                    <td><input type="text" name="nombre" id="nomb" size="20" placeholder="Nombre(s)" required="required"/></td>
                 </tr>
                 <tr>
                     <td><label class="reg">Sexo:</label></td>
                     <td>
                         <label class="reg">
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">M
+                            <input type="radio" name="sexo" id="optionsRadios1" value="M"/>M
                         </label>
                         <label class="reg">
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">F
+                            <input type="radio" name="sexo" id="optionsRadios2" value="F"/>F
                         </label>
                     </td>
                 </tr>
@@ -64,14 +68,16 @@
                     <td><input type="number" name="edad" id="edad" size="2" maxlength="2" placeholder="Edad" required="required"/></td>
                 </tr>
                 <tr>
-                    <td><label for="correo" class="reg">Email:</label></td>
-                    <td><input type="email" name="correo" id="correo" placeholder="Email" required="required"/></td>
+                    <td><label for="email" class="reg">Email:</label></td>
+                    <td><input type="email" name="email" id="correo" placeholder="Email" required="required"/></td>
                 </tr>
                 <tr>
-                    <td><label for="num" class="reg">N&uacute;mero de Control o RFC</label></td>
-                    <td><input type="text" name="num" id="num" size="13" placeholder="No. control o RFC" required="required"/></td>
+                    <td><label for="nctr_rfc" class="reg">N&uacute;mero de Control o RFC</label></td>
+                    <td><input type="text" name="nctr_rfc" id="num" size="13" placeholder="No. control o RFC" required="required"/></td>
+                
                 </tr>
                 <tr>
+                    
                     <td><input type="submit" name="registrar" id="registrar" value="REGISTRAR" class="btn btn-success"/></td>
                     <td><input type="reset" name="limpiar" id="limpiar" value="LIMPIAR" class="btn btn-danger"/></td>
                 </tr>
