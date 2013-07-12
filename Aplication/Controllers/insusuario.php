@@ -1,6 +1,6 @@
 <?php
 
-include "../Models/usuario_detalle.php";
+include '../models/usuariodetalle.php';
     $cveusu= $_POST['id_usuario'];
     $apellidop= $_POST['apellido_paterno'];
     $apellidom= $_POST['apellido_materno'];
@@ -12,11 +12,11 @@ include "../Models/usuario_detalle.php";
     
    
      
-    $Deusuario = new Classusuariodetalle();
-    $Deusuario->establecer($cveusu,$apellidop,$apellidom,$nomb,$sexo,$edad,$email,$nctr);
+    $Deusuario = new classusuariodetalle();
+    //$Deusuario->_establecer($cveusu,$apellidop,$apellidom,$nomb,$sexo,$edad,$email,$nctr);
     
-    $val=$Deusuario->insertar();
-if($val==true)
+    $Deusuario->insertar($cveusu,$apellidop,$apellidom,$nomb,$sexo,$edad,$email,$nctr);
+if($cveusu==0)
         echo "<script type=''>
            alert( 'Inserción exitosa');
            </script>";
