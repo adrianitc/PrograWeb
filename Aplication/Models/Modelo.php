@@ -14,14 +14,14 @@ class Modelo{
         return $rs;
     }
     public function inserta(){
-        $rs = array();
-        $rs['apellido_paterno']='x';
-        $rs['apellido_materno']='y';
-        $rs['nombre']='z';
-        $rs['sexo']='M';
-        $rs['edad']='21';
-        $rs['email']='juannn@nnnzn.mmm';
-        $rs['nctr_rfc']='09090909';
+//        $rs = array();
+//        $rs['apellido_paterno']='x';
+//        $rs['apellido_materno']='y';
+//        $rs['nombre']='z';
+//        $rs['sexo']='M';
+//        $rs['edad']='21';
+//        $rs['email']='juannn@nnnzn.mmm';
+//        $rs['nctr_rfc']='09090909';
         $sql_insert=  $this->db->GetInsertSQL($this->nombre_tabla,$rs);
         $this->get_error($this->db->Execute($sql_insert),'Error en modelo.inserta');
     }
