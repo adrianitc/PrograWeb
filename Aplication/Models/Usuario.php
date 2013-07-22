@@ -10,7 +10,8 @@ class Usuario extends Modelo{
                          'sexo'=>array(),
                          'edad'=>array(),
                          'email'=>array(),
-                         'nctr_rfc'=>array()
+                         'nctr_rfc'=>array(),
+                         'password'=>array()
     );
 
     private $apellido_paterno;
@@ -20,6 +21,8 @@ class Usuario extends Modelo{
     private $edad;
     private $email;
     private $nctr_rfc;
+    private $password;
+    
     
     //function _contruct(){
         //$this->Modelo();
@@ -100,6 +103,16 @@ class Usuario extends Modelo{
         //$this->password=  md5($var);
         if($this->valida_er('nctr_rfc',$valor)){
              $this->nctr_rfc=$valor;
+             return true;
+         }else
+             return false;
+    }
+    public function get_password(){
+        return $this->password;
+    }
+    public function set_password($valor){
+        if($this->valida_er('password',$valor)){
+             $this->password=  md5($valor);
              return true;
          }else
              return false;

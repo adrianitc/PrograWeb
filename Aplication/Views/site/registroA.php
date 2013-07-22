@@ -3,9 +3,13 @@
 include ('../layouts/header.php');
 
 ?>
-
+<div class="row">
+    <div class="span12">********Derechos********</div>
+    <div class="span12">*********Reservados*******</div>
+    <div class="span6">
 <form action="../../controllers/registroControllerA.php" method="POST">
     <h1 class="reg">Registro de Actividades</h1>
+    <table>
             <tr>
                 <td width="187" height="49"><label for="id_evento" class="reg">Evento al que pertenece:</label></td>
                 <td width="317">
@@ -53,7 +57,13 @@ include ('../layouts/header.php');
                 <td><input type="submit" name="registrar" id="registrar" value="REGISTRAR" class="btn btn-success"/></td>
                 <td><input type="reset" name="limpiar" id="limpiar" value="LIMPIAR" class="btn btn-danger"/></td>
             </tr>
+            </table>
             </form>
+    </div>
+    <div class="span6">
+    <img src="../img/Registro_nacional.png" alt="registro"/>
+    </div>
+</div>
 <?php
 
 include ('../layouts/footer.php');

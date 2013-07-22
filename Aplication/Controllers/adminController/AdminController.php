@@ -11,6 +11,10 @@ class AdminController {
         $usuario = new Usuario();
         $usuario->show_grid();
     }
+    public function lista_eventos(){
+        $usuario = new Evento();
+        $usuario->show_gridE();
+    }
     
     
 }  

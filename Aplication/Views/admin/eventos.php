@@ -1,6 +1,6 @@
 <?php
     include ('../../models/Modelo.php');
-    include ('../../models/Usuario.php');
+    include ('../../models/Evento.php');
     include ('../../libs/adodb5/adodb-pager.inc.php');
     include ('../../libs/adodb5/adodb.inc.php');
     include ('../../controllers/adminController/adminController.php');
@@ -11,7 +11,7 @@
     <div class="row" style="color:white;">
         <?php
             $admin = new AdminController();
-            $admin->lista_usuarios();
+            $admin->lista_eventos();
         ?>
     </div>
     

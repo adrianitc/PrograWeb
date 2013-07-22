@@ -3,9 +3,14 @@
 include ('../layouts/header.php');
 
 ?>
+<div class="row">
+    <div class="span12">********Derechos********</div>
+    <div class="span12">*********Reservados*******</div>
+    <div class="span6">
 <form action="../../controllers/registroControllerATU.php" method="POST">
 <div class="container-fluid tabla registro">
     <h1 class="reg">Actividades Tipos de Usuario</h1>
+    <table>
         	<div class="row-fluid">
             	<div class="span12">
                     <select name="id_usuario">
@@ -41,8 +46,17 @@ include ('../layouts/header.php');
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
+        
+    </table>
+   
+         </div>
+     </form>
+    <div class="span6">
+              <img src="../img/Registro_nacional.png" alt="registro"/>
+    </div>
+               
+   </div>
+</div>
 <?php
 
 include ('../layouts/footer.php');

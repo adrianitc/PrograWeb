@@ -1,8 +1,15 @@
 <?php
-
+session_start();
 include ('../layouts/header.php');
 ?>
-<h2>Pagina de Inicio</h2>
+      <?php
+            if(isset($_SESSION['id_usuario'])):
+      ?>
+            <h1 class="reg">Bienvenido al sistema de eventos. <?php echo $_SESSION['email'];?></h1>
+      <?php
+            endif;
+      ?>
+<h1 class="reg">Pagina de Inicio</h1>
 <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">

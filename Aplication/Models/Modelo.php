@@ -13,6 +13,12 @@ class Modelo extends Valida{
         $this->get_error($rs,'Error en consulta datos');
         return $rs;
     }
+    public function consulta_sql($sql){
+        $rs=$this->db->Execute($sql);
+        $this->get_error($rs,'Error en consulta datos');
+        return $rs;
+    }
+    
     public function inserta($rs){
 
         $sql_insert=  $this->db->GetInsertSQL($this->nombre_tabla,$rs);
@@ -34,7 +40,8 @@ class Modelo extends Valida{
                      sexo as Sexo,
                      edad as Edad,
                      email as Email,
-                     nctr_rfc as No_Control 
+                     nctr_rfc as No_Control,
+                     password as Password
                      FROM ".$this->nombre_tabla."";
         $grid=new ADODB_Pager($this->db,$sql);
         $grid->Render($rows_per_page=$num);
